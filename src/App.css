@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  min-width: 375px;
+  max-width: 1140px;
+  height: 100vh;
+  margin: auto;
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.game-title {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  color: #00cccc;
+  font-weight: bold;
+  border-bottom: 5px solid #cc6600;
+  padding-bottom: 10px;
+}
+
+.char-title {
+  margin: 0px;
+  padding: 0px;
+}
+
+.game-title span {
+  font-size: 1.3rem;
+}
+
+.customize {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+  overflow: auto;
+}
+
+.left-side {
+  width: 30%;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid #00cccc;
+  border-radius: 20px;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+}
+
+.right-side {
+  width: 70%;
+  display: block;
+  padding: 0px 10px;
+}
+
+.left-side img {
+  max-width: 80%;
+  min-width: 200px;
+}
+
+.left-side button {
+  margin-top: 5px;
+  background-color: #cc6600;
+  border: none;
   color: white;
+  padding: 7px 7px;
+  border-radius: 10px;
+  max-width: 100%;
+  font-size: 12px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+.left-side button:hover {
+  background-color: #cc8800;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.char-type-title {
+  text-align: center;
+}
+.char-type-title span {
+  color: #993300;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.char-list {
+  border: 3px solid brown;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.div-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  width: 70px;
+  height: 70px;
+  border: 0.7px solid lightgray;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: background-color 0.4s;
+}
+
+.div-img:hover {
+  background-color: #ffcc997a;
+}
+.char-list img {
+  width: 80%;
+  height: 80%;
+}
+
+@media only screen and (max-width: 767px) {
+  .customize {
+    flex-direction: column;
+    align-items: center;
   }
 }
