@@ -86,7 +86,7 @@
 .char-type-title {
   text-align: center;
 }
-.char-type-title span {
+.char-type-title h2 {
   color: #993300;
   font-weight: bold;
   font-size: 1.5rem;

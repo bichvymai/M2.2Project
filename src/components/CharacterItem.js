@@ -1,15 +1,22 @@
 import React from "react";
 
-function CharacterItem(name, images) {
+function CharacterItem({ part, item, index }) {
+  let imgUrl = `./character/${part}/${item}`;
+  imgUrl = item
+    ? `./character/${part}/${item}/${index}.png`
+    : `./character/${part}/${index}.png`;
+
   return (
-    <li class="char-type">
-      <div className="char-type-title">
-        <span>Body</span>
-      </div>
+    <div className="char-type">
+      {/* <div className="char-type-title">
+        <h2>{part.toUpperCase()}</h2>
+      </div> */}
       <div className="char-list">
-        <img src="" alt="" />
+        <div className="div-img">
+          <img src={imgUrl} alt="" />
+        </div>
       </div>
-    </li>
+    </div>
   );
 }
 
