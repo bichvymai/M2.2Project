@@ -14,12 +14,21 @@ function App() {
     },
     { part: "body", items: [{ total: 17 }] },
   ];
+
+  const characters = [];
+  x.forEach((part) => {
+    console.log(part);
+    part.items.forEach((item) => {
+      console.log(item);
+      characters.push(<Characters part={part.part} items={item} />);
+    });
+  });
+
+  console.log(characters);
   return (
     <div className="container">
       <Header />
-      {x.map((part) => (
-        <Characters part={part.part} items={part.items} />
-      ))}
+      {characters};
     </div>
   );
 }

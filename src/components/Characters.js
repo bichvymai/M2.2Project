@@ -10,10 +10,10 @@ function Characters({ part, items }) {
   return (
     <div className="char-type">
       <div className="char-type-title">
-        <h2>accessories</h2>
+        <h2>{part}</h2>
       </div>
       <div>
-        {items.map((item) => {
+        {items.foreach((item) => {
           for (let i = 0; i < item.total; i++) {
             <CharacterItem part={part} item={item.item} index={item.index} />;
           }
