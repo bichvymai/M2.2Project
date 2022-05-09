@@ -96,6 +96,8 @@
   border: 3px solid brown;
   border-radius: 10px;
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .div-img {
