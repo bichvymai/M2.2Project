@@ -5,30 +5,15 @@ import Characters from "./components/Characters";
 
 function App() {
   const x = [
-    {
-      part: "accessories",
-      items: [
-        { item: "earrings", total: 10 },
-        { item: "glasses", total: 20 },
-      ],
-    },
-    { part: "body", items: [{ total: 17 }] },
+    { name: "body", items: [{ total: 17 }], path: null },
+    { name: "earrings", items: [{ total: 20 }], path: "accessories" },
+    { name: "glasses", items: [{ total: 17 }], path: "accessories" },
   ];
 
-  const characters = [];
-  x.forEach((part) => {
-    console.log(part);
-    part.items.forEach((item) => {
-      console.log(item);
-      characters.push(<Characters part={part.part} items={item} />);
-    });
-  });
-
-  console.log(characters);
   return (
     <div className="container">
       <Header />
-      {characters};
+      <Characters items={x} />
     </div>
   );
 }
