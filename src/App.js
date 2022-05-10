@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Characters from "./components/Characters";
+import Avatar from "./components/Avatar";
 
 function App() {
   const x = [
@@ -20,7 +21,9 @@ function App() {
     <div className="container">
       <Header />
       <div class="customize">
-        <div className="left-side"></div>
+        <div className="left-side">
+          <Avatar />
+        </div>
         <div className="right-side">
           <Characters items={x} />
         </div>
