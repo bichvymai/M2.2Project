@@ -18,14 +18,14 @@ function App() {
   ];
 
   const [image, setImage] = useState([
-    { body: "body_1" },
-    { glass: "glass_1" },
-    { eyes: "eyes_1" },
-    { eyebrows: "eyebrows_1" },
-    { hair: "hair_1" },
-    { layer1: "layer_1" },
-    { layer2: "layer_2" },
-    { layer3: "layer_3" },
+    { body: "1.png" },
+    { glass: "1.png" },
+    { eyes: "1.png" },
+    { eyebrows: "1.png" },
+    { hair: "1.png" },
+    { layer1: "1.png" },
+    { layer2: "1.png" },
+    { layer3: "1.png" },
   ]);
 
   return (
