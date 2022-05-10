@@ -9,7 +9,7 @@ function CharacterItem({ name, items, path }) {
 
   const itemsMapped = items.map((item) => {
     let itemMapped = [];
-    for (let i = 1; i < item.total; i++) {
+    for (let i = 1; i <= item.total; i++) {
       imgUrl = path
         ? `./character/${path}/${name}/${i}.png`
         : `./character/${name}/${i}.png`;
