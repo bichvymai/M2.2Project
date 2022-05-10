@@ -7,7 +7,7 @@ function Header() {
         <h1>CHARACTER</h1>
       </div>
       <div className="char-title">
-        <span>CUSTOMIZATION</span>
+        <span>🛠️CUSTOMIZATION🛠️</span>
       </div>
     </div>
   );
