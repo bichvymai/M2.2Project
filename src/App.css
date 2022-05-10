@@ -182,7 +182,7 @@
 
   .right-side {
     width: 100%;
-    height: calc(100vh - 200px - 335px);
+    height: calc(100vh - 200px - 200px);
     margin-top: 20px;
   }
 }
