@@ -1,8 +1,13 @@
 import React from "react";
 
-function Avatar() {
-  let images = [];
+function Avatar(name, path, items) {
+  // let imageBody = 17;
+  // let index = 0;
+  // let random = `./character/body/${Math.floor(
+  //   Math.random() * items[name].items.total + 1
+  // )}.png`;
 
+  // console.log(index);
   return (
     <>
       <div className="avatar-image">
@@ -25,7 +30,7 @@ function Avatar() {
         <img className="mouth" src="./character/mouths/3.png" alt="" />
         <img className="nose" src="./character/moses/1.png" alt="" />
         <img className="eyes" src="./character/eyes/1.png" alt="" />
-        <img className="eyebrows" src="./character/eyebrows/1.png" alt="" />
+        <img className="eyebrows" src="./character/eyebrows/{eye}.png" alt="" />
         <img
           className="glasses"
           src="./character/accessories/glasses/1.png"

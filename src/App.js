@@ -17,10 +17,21 @@ function App() {
     { name: "layer_3", items: [{ total: 9 }], path: "clothes" },
   ];
 
+  const [image, setImage] = useState([
+    { body: "body_1" },
+    { glass: "glass_1" },
+    { eyes: "eyes_1" },
+    { eyebrows: "eyebrows_1" },
+    { hair: "hair_1" },
+    { layer1: "layer_1" },
+    { layer2: "layer_2" },
+    { layer3: "layer_3" },
+  ]);
+
   return (
     <div className="container">
       <Header />
-      <div class="customize">
+      <div className="customize">
         <div className="left-side">
           <Avatar />
         </div>
