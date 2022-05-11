@@ -1,15 +1,24 @@
 import React from "react";
-import CharacterItem from "./CharacterItem";
 
-function Characters({ items }) {
-  let listItems = items;
-  listItems = items.map((item) => {
-    return (
-      <CharacterItem name={item.name} items={item.items} path={item.path} />
+function Characters({ total, path, set }) {
+  let parts = [];
+  for (let i = 0; i < total; i++) {
+    parts.push(
+      <div key={path + i} className="div-img" onClick={() => set(i)}>
+        <img src={`character/${path}/${i + 1}.png`} alt="" />
+      </div>
     );
-  });
+  }
 
-  return <div>{listItems}</div>;
+  return <div className="char-list">{parts}</div>;
+  // let listItems = items;
+  // listItems = items.map((item) => {
+  //   return (
+  //     <CharacterItem name={item.name} items={item.items} path={item.path} />
+  //   );
+  // });
+
+  // return <div>{listItems}</div>;
 }
 
 export default Characters;
